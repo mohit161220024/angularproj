@@ -1,0 +1,36 @@
+<h1>List of employees</h1>
+<table border="1" >
+    <thead>
+        <tr>
+            <th  >Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Speaker</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let eve of events" >
+        
+        <td>{{eve.id }}</td>
+        <td>{{eve.name}}</td>
+        <td>{{eve.description}}</td>
+        <td>{{eve.speaker }}</td>
+        <th> <button (click)="funcDelete(e)" class="btn btn-danger">X</button> </th>
+        </tr>
+    </table>
+   <!--  <div class="well">
+        <form class="form-inline">
+            <div class="from-group">
+                <input placeholder="Event Name" class="form-control" #eventname />
+            </div>
+            <div class="from-group">
+                <input placeholder="Description" class="form-control" #desciption />
+            </div>
+            <div class="from-group">
+                <input placeholder="Speaker" class="form-control" #speaker />
+            </div>
+            <button (click)="addEvent(eventname.value,desciption.value,speaker.value )" type="button">Add New Event</button>
+        </form>
+    </div> -->
+   
+
+   
